@@ -10,3 +10,7 @@ const create = data => {
     return http.post("/cases", data);
 };
 
+const update = (_id, data) => {
+    return http.put(`cases/${_id}`, data);
+};
+
