@@ -1,3 +1,5 @@
+import http from "../http-common";
+
 const getAll = () => {
     return http.get("/cases");
 };
@@ -16,4 +18,14 @@ const update = (_id, data) => {
 
 const remove = id => {
     return http.delete(`cases/${id}`);
+};const remove = id => {
+    return http.delete(`cases/${id}`);
+};
+
+export default {
+  getAll,
+  get,
+  create,
+  update,
+  remove,
 };
