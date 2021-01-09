@@ -102,7 +102,7 @@ const handleInputChange = event => {
             <h4>Case</h4>
             <form>
               <div className="form-group">
-                <label htmlFor="title">Title</label>
+                <label htmlFor="title">Date</label>
                 <input
                   type="Date"
                   className="form-control"
@@ -154,7 +154,7 @@ const handleInputChange = event => {
                   className="form-control"
                   id="state"
                   name="state"
-                  value={currentCase.states}
+                  value={currentCase.state}
                   onChange={handleInputChange}
                 />
               </div>
