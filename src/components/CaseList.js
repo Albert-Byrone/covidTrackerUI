@@ -41,3 +41,14 @@ const handleInputChange = event => {
     setCurrentCase({ ...currentCase, [name]: value });
   };
 
+  const updateCase = () => {
+    CaseDataService.update(currentCase._id, currentCase)
+      .then(response => {
+        console.log(response.data);
+        setMessage("The data was updated successfully!");
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  };
+
