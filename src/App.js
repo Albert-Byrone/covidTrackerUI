@@ -9,21 +9,23 @@ import CaseList from "./components/CaseList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <a href="/cases" className="navbar-brand">
+          Covid Case Tracker
+        </a>                                                                
+        <div className="navbar-nav mr-auto">
+          <li className="nav-item">                                                               
+            <Link to={"/cases"} className="nav-link">
+              Cases
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to={"/new"} className="nav-link">
+              Add
+            </Link>
+          </li>
+        </div>
+      </nav>
     </div>
   );
 }
