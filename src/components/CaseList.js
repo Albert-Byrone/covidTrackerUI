@@ -24,3 +24,14 @@ import './CaseList.css';
       setCurrentCase(_case);
     };
 
+
+
+  const getCase =_id =>{
+    CaseDataService.get(_id)
+        .then(response=>{  
+          setCurrentCase(response.data)
+            console.log(response.data);
+        })
+        .catch(e =>console.log(e))
+};
+
