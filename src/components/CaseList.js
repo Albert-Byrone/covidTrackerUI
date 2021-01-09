@@ -11,3 +11,16 @@ import './CaseList.css';
   }, []);
 
  
+  const retrieveCases = () => {
+    CaseDataService.getAll()
+      .then(response => {
+        setCases(response.data);
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  };
+    const setActiveCase = (_case) => {
+      setCurrentCase(_case);
+    };
+
