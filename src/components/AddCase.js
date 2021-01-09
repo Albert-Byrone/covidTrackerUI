@@ -11,3 +11,6 @@ import CaseDataService from "../services/CaseService"
         state: ""
 
     };
+
+    const [_case, setCase] = useState(initialCaseState);
+    const [ submitted, setSubmitted] = useState(false);
