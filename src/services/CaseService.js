@@ -14,3 +14,6 @@ const update = (_id, data) => {
     return http.put(`cases/${_id}`, data);
 };
 
+const remove = id => {
+    return http.delete(`cases/${id}`);
+};
