@@ -35,3 +35,9 @@ import './CaseList.css';
         .catch(e =>console.log(e))
 };
 
+
+const handleInputChange = event => {
+    const { name, value } = event.target;
+    setCurrentCase({ ...currentCase, [name]: value });
+  };
+
