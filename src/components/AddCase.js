@@ -14,3 +14,8 @@ import CaseDataService from "../services/CaseService"
 
     const [_case, setCase] = useState(initialCaseState);
     const [ submitted, setSubmitted] = useState(false);
+
+    const handleInputChange = event =>{
+        const { name, value} = event.target;
+        setCase({..._case, [name]:value})
+    };
