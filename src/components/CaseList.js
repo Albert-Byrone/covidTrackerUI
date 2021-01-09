@@ -104,7 +104,7 @@ const handleInputChange = event => {
               <div className="form-group">
                 <label htmlFor="title">Date</label>
                 <input
-                  type="Date"
+                  type="text"
                   className="form-control"
                   id="date"
                   name="date"
