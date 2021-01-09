@@ -5,3 +5,8 @@ const getAll = () => {
 const get = _id => {
     return http.get(`/cases/${_id}`)
 };
+
+const create = data => {
+    return http.post("/cases", data);
+};
+
