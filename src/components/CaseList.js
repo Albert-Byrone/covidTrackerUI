@@ -52,3 +52,15 @@ const handleInputChange = event => {
       });
   };
 
+  const deleteCase = () => {
+    CaseDataService.remove(currentCase._id)
+      .then(response => {
+        console.log(response.data);
+        setMessage("The data was updated successfully!");
+        props.history.push("/");
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  };
+
