@@ -5,3 +5,9 @@ import './CaseList.css';
   const [cases, setCases] = useState([]);
   const [currentCase, setCurrentCase] = useState(null);
   const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    retrieveCases();
+  }, []);
+
+ 
