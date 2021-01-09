@@ -69,7 +69,7 @@ const AddCase =()=>{
           <div className="form-group">
             <label htmlFor="date">Date</label>
             <input
-              type="date"
+              type="text"
               className="form-control"
               id="date"
               required
