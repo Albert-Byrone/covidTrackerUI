@@ -1,5 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import AddCase from "./components/AddCase";
+import Case from "./components/Case";
+import CaseList from "./components/CaseList";
 
 function App() {
   return (
