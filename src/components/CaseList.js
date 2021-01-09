@@ -64,3 +64,32 @@ const handleInputChange = event => {
       });
   };
 
+  return (
+    <div className="list row">
+    <div className="col-md-10">
+      <h4 style={{ textAlign: "center", fontFamily: "arial, sans-serif"}}> List</h4>
+
+        <table  className="table table-hover">
+            <thead>
+            <tr>
+            <th>County</th>
+            <th>Date</th>
+            <th>State</th>
+            <th>Deaths</th>
+            <th>Cases</th>
+            </tr>
+        </thead>
+        <tbody>
+            { cases && cases.map((_case,index)=>{
+
+                return <tr key={index} onClick={() => setActiveCase(_case, index)}>
+                        <td>{ _case.county}</td>
+                        <td >{ _case.date}</td>
+                        <td>{ _case.state}</td>
+                        <td>{ _case.deaths}</td>
+                        <td>{ _case.cases}</td>
+                     </tr>
+            })}
+        </tbody>  
+        </table>
+    </div>
