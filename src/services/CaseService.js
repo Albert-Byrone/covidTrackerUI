@@ -18,8 +18,6 @@ const update = (_id, data) => {
 
 const remove = id => {
     return http.delete(`cases/${id}`);
-};const remove = id => {
-    return http.delete(`cases/${id}`);
 };
 
 export default {
